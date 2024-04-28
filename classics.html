@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeloVibe-Online Music Player</title>
+    <link rel="icon" type="icon" href="Assets/imgs/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Protest+Strike&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Protest+Strike&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="classicsCss.css" />
+  </head>
+  <body>
+    <section class="mainLeft sec1">
+      <div class="links">
+        <div id="slider">
+          <figure>
+            <img src="Assets/imgs/classicBanner.jpeg" />
+            <img src="Assets/imgs/s2.jpeg" />
+            <img src="Assets/imgs/s3.jpeg" />
+          </figure>
+        </div>
+      </div>
+
+
+      <div class="NewhitsLink" id="NHL">
+        <a href="explore.html"><img src="Assets/imgs/newHits.jpeg" alt=""></a>
+     </div>
+      <div class="musicSystem" onclick="togglePlayPause()"  id="MS">
+        <img
+          id="masterPoster"
+          src="Assets/imgs/baby won't you tell me.jpg"
+          alt=""
+        />
+        <img id="gif" src="Assets/imgs/soundwave.gif" alt="" />
+        <div class="trackname">
+          <span id="trackDis">Start Music</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="mainMiddle sec2">
+      <div class="midPanel">
+        <div class="midBanner">
+          <div class="banNav">
+            <div class="banEle">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a id="explore" href="explore.html">Explore</a></li>
+                <li><a href="About.html">About</a></li>
+              </ul>
+            </div>
+            <div class="banSearch">
+              <div class="bothSearch">
+                  <input id="searchInput" type="text" placeholder="Find Your Melody Here!">
+                  <div class="SP">
+                      <span id="searchIcon" onclick="togglePlayPause()">Play</span>
+                  </div>
+                
+              </div>
+
+              <div id="searchResult" class="s_result_panel">
+                  <div id="resultSong" class="song_found">
+                      <div class="songItem">
+                          
+
+                      </div>
+                  </div>
+              
+                  <div id="output_name" class="outputSong_name">
+              
+                  </div>
+              </div>
+              <div class="musicSystem2" id="MS2">
+                <img id="masterPoster2" onclick="togglePlayPause()" src="" alt="">
+                <img id="gif2" src="Assets/imgs/soundwave.gif" alt="">
+              </div>
+              
+              
+          </div>
+
+          </div>
+        </div>
+
+        <section class="mainRight sec3">
+          <div class="AlbumCard">
+            <div class="psl">
+              <div class="playsongsList">
+                <li class="songItem">
+                  <img src="Assets/imgs/401.jpg" alt="" />
+                  <p id="401t" class="Songtitle">Oye Oye</p>
+                  <img
+                    id="401"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/402.jpg" alt="" />
+                  <p id="402t" class="Songtitle">Niluvadhamu Ninu Epudaina</p>
+                  <img
+                    id="402"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/403.jpg" alt="" />
+                  <p id="403t" class="Songtitle">Pilichina</p>
+                  <img
+                    id="403"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/404.jpg" alt="" />
+                  <p id="404t" class="Songtitle">Arey Rey</p>
+                  <img
+                    id="404"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/405.jpg" alt="" />
+                  <p id="405t" class="Songtitle">O My Friend</p>
+                  <img
+                    id="405"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+               
+              </div>
+
+
+              <div class="playsongsList">
+                <li class="songItem">
+                  <img src="Assets/imgs/406.jpg" alt="" />
+                  <p id="406t" class="Songtitle">Ye Cheekati</p>
+                  <img
+                    id="406"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/407.jpg" alt="" />
+                  <p id="407t" class="Songtitle">Apudo Ipudo</p>
+                  <img
+                    id="407"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/408.jpg" alt="" />
+                  <p id="408t" class="Songtitle">Nammaka Thappani</p>
+                  <img
+                    id="408"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/409.jpg" alt="" />
+                  <p id="409t" class="Songtitle">My heart is beating adola</p>
+                  <img
+                    id="409"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/410.jpg" alt="" />
+                  <p id="410t" class="Songtitle">Gaallo Thelinattunde</p>
+                  <img
+                    id="410"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+               
+              </div>
+
+
+              <div class="playsongsList">
+                <li class="songItem">
+                  <img src="Assets/imgs/411.jpg" alt="" />
+                  <p id="411t" class="Songtitle">Jalsa</p>
+                  <img
+                    id="411"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/412.jpg" alt="" />
+                  <p id="412t" class="Songtitle">Yegire Chilakamma</p>
+                  <img
+                    id="412"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/413.jpg" alt="" />
+                  <p id="413t" class="Songtitle">Neelo Jarige</p>
+                  <img
+                    id="413"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/414.jpg" alt="" />
+                  <p id="414t" class="Songtitle">Cheliya</p>
+                  <img
+                    id="414"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/415.jpg" alt="" />
+                  <p id="415t" class="Songtitle">Premante</p>
+                  <img
+                    id="415"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+               
+              </div>
+
+              <div class="playsongsList">
+                <li class="songItem">
+                  <img src="Assets/imgs/416.jpg" alt="" />
+                  <p id="416t" class="Songtitle">Nemali Kulukula</p>
+                  <img
+                    id="416"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/417.jpg" alt="" />
+                  <p id="417t" class="Songtitle">Endhuko Emo</p>
+                  <img
+                    id="417"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/418.jpg" alt="" />
+                  <p id="418t" class="Songtitle">You Are My Love</p>
+                  <img
+                    id="418"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/419.jpg" alt="" />
+                  <p id="419t" class="Songtitle">Rekhalu</p>
+                  <img
+                    id="419"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/420.jpg" alt="" />
+                  <p id="420t" class="Songtitle">It's your Love</p>
+                  <img
+                    id="420"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+                
+              </div>
+
+
+              <div class="playsongsList">
+                <li class="songItem">
+                  <img src="Assets/imgs/421.jpg" alt="" />
+                  <p id="421t" class="Songtitle">Nuvvunte</p>
+                  <img
+                    id="421"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/422.jpg" alt="" />
+                  <p id="422t" class="Songtitle">Feel My Love</p>
+                  <img
+                    id="422"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/423.jpg" alt="" />
+                  <p id="423t" class="Songtitle">Nijanga Nenena</p>
+                  <img
+                    id="423"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/424.jpg" alt="" />
+                  <p id="424t" class="Songtitle">Vennelintha</p>
+                  <img
+                    id="424"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/425.jpg" alt="" />
+                  <p id="425t" class="Songtitle">Gulabi Kallu Rendu Mullu</p>
+                  <img
+                    id="425"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+              
+              </div>
+
+              <div class="playsongsList">
+                <li class="songItem">
+                  <img src="Assets/imgs/426.jpg" alt="" />
+                  <p id="426t" class="Songtitle">Ammaye</p>
+                  <img
+                    id="426"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/427.jpg" alt="" />
+                  <p id="427t" class="Songtitle">Cheppave Chirugali</p>
+                  <img
+                    id="427"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/428.jpg" alt="" />
+                  <p id="428t" class="Songtitle">Happy</p>
+                  <img
+                    id="428"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/429.jpg" alt="" />
+                  <p id="429t" class="Songtitle">Chinnadana</p>
+                  <img
+                    id="429"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/430.jpg" alt="" />
+                  <p id="430t" class="Songtitle">Oh Priya Priya</p>
+                  <img
+                    id="430"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+              
+              </div>
+
+              <div class="playsongsList">
+                <li class="songItem">
+                  <img src="Assets/imgs/431.jpg" alt="" />
+                  <p id="431t" class="Songtitle">Ninnu Chudagaane</p>
+                  <img
+                    id="431"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/432.jpg" alt="" />
+                  <p id="432t" class="Songtitle">Chirunavve</p>
+                  <img
+                    id="432"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/433.jpg" alt="" />
+                  <p id="433t" class="Songtitle">Listen To My Heart</p>
+                  <img
+                    id="433"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/434.jpg" alt="" />
+                  <p id="434t" class="Songtitle">Manasantha</p>
+                  <img
+                    id="434"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/435.jpg" alt="" />
+                  <p id="435t" class="Songtitle">Varsham Munduga</p>
+                  <img
+                    id="435"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+              
+              </div>
+
+
+              <div class="playsongsList">
+                <li class="songItem">
+                  <img src="Assets/imgs/436.jpg" alt="" />
+                  <p id="436t" class="Songtitle">Who are you</p>
+                  <img
+                    id="436"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/437.jpg" alt="" />
+                  <p id="437t" class="Songtitle">Atu Itu Ooguthu</p>
+                  <img
+                    id="437"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/438.jpg" alt="" />
+                  <p id="438t" class="Songtitle">Life is Beautiful</p>
+                  <img
+                    id="438"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/439.jpg" alt="" />
+                  <p id="439t" class="Songtitle">Hrudayam Ekkadunnadi</p>
+                  <img
+                    id="439"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+
+                <li class="songItem">
+                  <img src="Assets/imgs/440.jpg" alt="" />
+                  <p id="440t" class="Songtitle">Kallu Moosi Yochisthey</p>
+                  <img
+                    id="440"
+                    src="Assets/imgs/playcircle.svg"
+                    fill="white"
+                    class="bi plyBtn bi-play-circle playit"
+                    alt="#"
+                  />
+                </li>
+              
+              </div>
+
+
+
+              
+
+        </section>
+
+        
+      </div>
+
+      <div class="musicPlayer">
+        <div class="progressBar">
+          <span id="pbTime">00:00</span>
+          <input type="range" id="pb" value="0" min="0" max="100" />
+          <span id="pbTotalTime">00:00</span>
+
+          <svg
+            id="vol"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-volume-up volBtn"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"
+            />
+            <path
+              d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"
+            />
+            <path
+              d="M10.025 8a4.5 4.5 0 0 1-1.318 3.182L8 10.475A3.5 3.5 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.5 4.5 0 0 1 10.025 8M7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11"
+            />
+          </svg>
+
+          <input type="range" id="volCtrl" min="0" max="100" />
+        </div>
+
+        <div class="playerControl">
+          <div class="loop">
+            <img id="pcLoop" src="Assets/imgs/loop.svg" alt="loop Button">
+        </div>
+
+        <div class="pcP">
+            <svg id="pcPrev" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-skip-start-fill pcClass" viewBox="0 0 16 16">
+                <path d="M4 4a.5.5 0 0 1 1 0v3.248l6.267-3.636c.54-.313 1.232.066 1.232.696v7.384c0 .63-.692 1.01-1.232.697L5 8.753V12a.5.5 0 0 1-1 0z"/>
+            </svg>
+        </div>
+        
+        <!-- <svg id ="pcmain1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="herePLY bi bi-play-circle pcClass" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+        </svg> -->
+
+        <div class="pcM">
+            <img id="pcmain1" onclick="togglePlayPause()" src="Assets/imgs/playcircle.svg" fill = "white" class="bi plyBtn bi-play-circle pcClass" alt="#">
+        </div>
+        
+        <div class="pcN">
+            <svg id="pcNext" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-skip-end-fill pcClass" viewBox="0 0 16 16">
+                <path d="M12.5 4a.5.5 0 0 0-1 0v3.248L5.233 3.612C4.693 3.3 4 3.678 4 4.308v7.384c0 .63.692 1.01 1.233.697L11.5 8.753V12a.5.5 0 0 0 1 0z"/>
+            </svg>
+        </div>
+
+        <div class="autoplay">
+            <img id="pcAutoPlay" src="Assets/imgs/autoplay.svg" alt="autoplay Button">
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="classics.js"></script>
+  </body>
+</html>

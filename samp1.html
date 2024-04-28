@@ -1,0 +1,125 @@
+<!-- 
+<script src="samp1.js"></script>
+<style>
+    .s_result_panel{
+        width: 600px;
+        height: 300px;
+        border: 2px solid red;
+        display: flex;
+    }
+
+    .song_found{
+        width: 100px;
+        height: 100px;
+        position: relative;
+    }
+
+    .song_found img{ 
+        width: 100px;
+        height: 100px;
+        position: absolute;
+    }
+
+    .song_found p{ 
+        width: 100px;
+        height: 100px;
+        font-size: 32px;
+        color: black;
+        position: absolute;
+    }
+
+
+</style>
+
+<input type="text" id="searchInput" placeholder="Search for a song...">
+<button onclick="search()">Search</button>
+<div id="searchResult" class="s_result_panel">
+    <div id="resultSong" class="song_found">
+
+    </div>
+
+    <div id="output_name" class="outputSong_name">
+
+    </div>
+</div>
+
+<div class="songItem">
+    <img class="outputSong" src="Assets/imgs/58.jpg" alt="">
+    <p id="58t" class="Songtitle floattitle"> Baitikochi Chuste</p>
+    <img id="58" src="Assets/imgs/playcircle.svg" fill="white" class="bi plyBtn bi-play-circle playit searchPlay" alt="#">
+</div>
+
+<div class="songItem">
+    <img class="outputSong"  src="Assets/imgs/60.jpg" alt="">
+    <p id="60t" class="Songtitle floattitle"> Baita</p>
+    <img id="60" src="Assets/imgs/playcircle.svg" fill="white" class="bi plyBtn bi-play-circle playit searchPlay" alt="#">
+</div>
+
+<div class="songItem">
+    <img class="outputSong" src="Assets/imgs/59.jpg" alt="">
+    <p id="59t" class="Songtitle floattitle">Gaali Vaaluga</p>
+    <img id="59" src="Assets/imgs/playcircle.svg" fill="white" class="bi plyBtn bi-play-circle playit searchPlay" alt="#">
+</div>
+
+Add more song items as needed -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Search</title>
+</head>
+<body>
+    <input type="text" id="searchInput" placeholder="Search songs...">
+    <div class="songList">
+        <div class="songItem">
+            <img class="outputSong" src="Assets/imgs/58.jpg" alt="">
+            <p id="58t" class="Songtitle floattitle">tikochi baiChuste</p>
+            <img id="58" src="Assets/imgs/playcircle.svg" fill="white" class="bi plyBtn bi-play-circle playit searchPlay" alt="#">
+        </div>
+
+        <div class="songItem">
+            <img class="outputSong"  src="Assets/imgs/60.jpg" alt="">
+            <p id="60t" class="Songtitle floattitle">Baita</p>
+            <img id="60" src="Assets/imgs/playcircle.svg" fill="white" class="bi plyBtn bi-play-circle playit searchPlay" alt="#">
+        </div>
+
+        <div class="songItem">
+            <img class="outputSong" src="Assets/imgs/59.jpg" alt="">
+            <p id="59t" class="Songtitle floattitle">Gaali Vaaluga</p>
+            <img id="59" src="Assets/imgs/playcircle.svg" fill="white" class="bi plyBtn bi-play-circle playit searchPlay" alt="#">
+        </div>
+    </div>
+
+    <script>
+        const searchInput = document.getElementById("searchInput");
+        const songItems = document.querySelectorAll(".songItem");
+
+        searchInput.addEventListener("input", function() {
+            const searchText = this.value.trim().toLowerCase();
+            const matchedIds = [];
+
+            songItems.forEach(function(item) {
+                const title = item.querySelector(".Songtitle").textContent.toLowerCase();
+                const songId = item.getAttribute("data-id");
+
+                if (title.includes(searchText)) {
+                    item.style.display = "block";
+                    matchedIds.push(songId);
+                } else {
+                    item.style.display = "none";
+                }
+            });
+
+            console.log("Matched IDs:", matchedIds);
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
